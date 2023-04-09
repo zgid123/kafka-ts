@@ -1,0 +1,48 @@
+{
+  "name": "kafka-ts",
+  "description": "Kafka for javascript",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
+    "clear": "pnpm -r exec -- rm -rf",
+    "clear-node-modules": "pnpm -r exec -- rm -rf node_modules",
+    "update-packages": "pnpm update -i -r --latest",
+    "build": "turbo run build --filter=!@examples/*"
+  },
+  "keywords": [
+    "kafka",
+    "kafka-ts",
+    "kafka-js",
+    "kafka-typescript",
+    "kafka-javascript",
+    "kafka-nodejs",
+    "kafka-nestjs"
+  ],
+  "author": "Alpha",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zgid123/kafka-ts.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "rollup": "^3.20.2",
+    "turbo": "^1.8.8",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  }
+}
