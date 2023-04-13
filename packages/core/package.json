@@ -1,0 +1,40 @@
+{
+  "name": "@kafka-ts/core",
+  "version": "1.0.0",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Alpha",
+  "description": "Core package for @kafka-ts",
+  "homepage": "https://github.com/zgid123/kafka-ts",
+  "keywords": [
+    "kafka",
+    "kafka-ts",
+    "kafka-js",
+    "kafka-typescript",
+    "kafka-javascript",
+    "kafka-nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgid123/kafka-ts"
+  },
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
