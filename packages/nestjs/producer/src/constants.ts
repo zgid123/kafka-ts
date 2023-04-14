@@ -1,0 +1,1 @@
+export const KAFKA_PRODUCERS = 'KAFKA_PRODUCERS';

@@ -1,0 +1,46 @@
+{
+  "name": "@kafka-ts/nestjs-producer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Alpha",
+  "description": "NestJS package for producer",
+  "homepage": "https://github.com/zgid123/kafka-ts",
+  "keywords": [
+    "kafka",
+    "kafka-ts",
+    "kafka-js",
+    "kafka-typescript",
+    "kafka-javascript",
+    "kafka-nodejs",
+    "kafka-nestjs",
+    "kafka-producer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgid123/kafka-ts"
+  },
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "dependencies": {
+    "@kafka-ts/core": "workspace:*",
+    "@nestjs/common": "^9.4.0"
+  },
+  "devDependencies": {
+    "@kafka-ts/producer-commons": "workspace:*"
+  }
+}
