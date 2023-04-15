@@ -1,0 +1,23 @@
+{
+  "name": "@examples/fastify",
+  "version": "1.0.0",
+  "description": "Example for Fastify",
+  "type": "module",
+  "scripts": {
+    "dev": "vite-node -w src/main.ts",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@kafka-ts/fastify-consumer": "workspace:*",
+    "@kafka-ts/fastify-producer": "workspace:*",
+    "detect-port": "^1.5.1",
+    "fastify": "^4.15.0",
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "@fastify/vite": "^4.0.0",
+    "@types/detect-port": "^1.3.2",
+    "fastify-cli": "^5.7.1",
+    "vite-node": "^0.30.0"
+  }
+}
